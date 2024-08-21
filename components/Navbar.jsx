@@ -6,22 +6,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Button } from "./ui/button";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Components", href: "#" },
-  { name: "Templates", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Docs", href: "/docs" },
+  { name: "Components", href: "/components" },
+  { name: "Templates", href: "/templates" },
 ];
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="inset-x-0 z-50">
       <nav
         aria-label="Global"
         className="flex items-center justify-between p-4 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <p className="text-xl font-semibold">Substruct UI</p>
+          <p className="text-xl font-semibold tracking-tighter">Substruct UI</p>
         </div>
         <div className="flex lg:hidden">
           <button
