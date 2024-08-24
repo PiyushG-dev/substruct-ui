@@ -15,8 +15,11 @@ const Navbar = () => {
         aria-label="Global"
         className="flex items-center justify-between p-4 lg:px-8 max-w-screen-xl mx-auto"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 gap-1">
           <p className="text-xl font-semibold tracking-tighter">SubstructUI</p>
+          <p className="text-[12px] bg-primary/30 rounded-full h-fit px-[.3rem]">
+            beta
+          </p>
         </div>
         <div className="flex lg:hidden">
           <button
