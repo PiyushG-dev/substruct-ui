@@ -4,13 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Button } from "./ui/button";
-
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Docs", href: "/docs" },
-  { name: "Components", href: "/components" },
-  { name: "Templates", href: "/templates" },
-];
+import { navigation } from "@/constants";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,7 +13,7 @@ const Navbar = () => {
     <header className="inset-x-0 z-50">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-4 lg:px-8"
+        className="flex items-center justify-between p-4 lg:px-8 max-w-screen-xl mx-auto"
       >
         <div className="flex lg:flex-1">
           <p className="text-xl font-semibold tracking-tighter">Substruct UI</p>
