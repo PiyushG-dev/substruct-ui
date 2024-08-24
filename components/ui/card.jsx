@@ -7,7 +7,6 @@ const Card = ({ comp, params, index }) => {
   const [hoveredCard, setHoveredCard] = useState(null);
   return (
     <div
-      key={comp}
       className="relative flex flex-col gap-3 cursor-pointer"
       onMouseEnter={() => setHoveredCard(index)}
       onMouseLeave={() => setHoveredCard(null)}

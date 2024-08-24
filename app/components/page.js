@@ -14,7 +14,7 @@ const Components = () => {
   return (
     <div className="grid grid-cols-2 gap-6">
       {comps.map((comp, index) => {
-        return <Card comp={comp} index={index} params="" />;
+        return <Card key={comp} comp={comp} index={index} params="" />;
       })}
     </div>
   );
