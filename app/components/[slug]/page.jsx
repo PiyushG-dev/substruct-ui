@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import placeholder from "@/public/placeholder.webp";
-
 const comps = [
   "component 1",
   "component 2",
@@ -10,8 +9,7 @@ const comps = [
   "component 5",
   "component 6",
 ];
-
-const Components = () => {
+const component = ({ params }) => {
   return (
     <div className="grid grid-cols-2 gap-6">
       {comps.map((comp) => {
@@ -25,7 +23,9 @@ const Components = () => {
               />
             </div>
             <div>
-              <p className="text-sm">{comp}</p>
+              <p className="text-sm">
+                {params.slug} {comp}
+              </p>
             </div>
           </div>
         );
@@ -34,4 +34,4 @@ const Components = () => {
   );
 };
 
-export default Components;
+export default component;
