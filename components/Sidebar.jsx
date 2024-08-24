@@ -10,7 +10,7 @@ export default function Sidebar() {
   return (
     <div className="flex flex-col h-screen">
       {/* Sidebar Content */}
-      <nav className="flex flex-col px-8 pt-10 gap-3">
+      <nav className="flex flex-col px-8 pt-10 pb-20 gap-3">
         <div className="flex flex-col gap-[.1rem]">
           <h3 className="font-semibold py-2 px-2">Individual</h3>
           {components_navigation.map((comp) => {
