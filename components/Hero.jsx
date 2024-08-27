@@ -18,7 +18,7 @@ export default function Hero() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               The bridge between Designers and Developers
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 max-w-2xl mx-auto">
+            <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
               A game changer component and template library with extensive code
               overrides for all framer projects.
             </p>
